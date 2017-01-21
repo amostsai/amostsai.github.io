@@ -38,50 +38,65 @@
                         <a class="nav-link" href="/">服務項目 <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/case.html">案例分享 </a>
+                        <a class="nav-link active" href="/case.html">案例分享 </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/contact_us.html">聯絡我們 </a>
+                        <a class="nav-link" href="/contact_us.html">聯絡我們 </a>
                     </li>
                 </ul>
             </div>
         </nav>
 
-        <div class="container p-3">
-          <form>
-            <div class="form-group row">
-              <label for="name_input" class="col-2 col-form-label">公司寶號/姓名</label>
-              <div class="col-10">
-                <input class="form-control" type="text" id="name_input">
-              </div>
-            </div>
-            <div class="form-group row">
-                <label for="phone_input" class="col-2 col-form-label">電子郵件</label>
-                <div class="col-10">
-                  <input class="form-control" type="text" id="phone_input">
+        <div class="col-10 offset-1">
+          <div class="card-deck">
+              <a class="col-4" href="{{ url_for('article.post', post_id=post.id) }}">
+                <div class="card m-3">
+                  <img width="300ppx" class="card-img-top img-fluid" src="static/images/web_case/cheminfo_org_tw_small.png" alt="">
+                  <div class="card-block">
+                    <h4 class="card-title">石化產業社會責任及資源整合平台</h4>
+                    <p class="card-text">完整前後台設計，管理者可自行發布文章、帳號</p>
+                  </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label for="phone_input" class="col-2 col-form-label">聯絡電話</label>
-                <div class="col-10">
-                  <input class="form-control" type="text" id="phone_input">
+              </a>
+              <a class="col-4" href="{{ url_for('article.post', post_id=post.id) }}">
+                <div class="card m-3">
+                  <img width="300ppx" class="card-img-top img-fluid" src="static/images/web_case/foreverpmc_com_small.png" alt="">
+                  <div class="card-block">
+                    <h4 class="card-title">長建身心診所</h4>
+                    <p class="card-text">自適化網頁設計，電腦、平板、手機都能獲得最佳閱讀感受</p>
+                  </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label for="content_input" class="col-2 col-form-label">留言內容</label>
-                <div class="col-10">
-                  <textarea class="form-control" type="text" id="content_input" rows="10" cols="50"></textarea>
+              </a>
+              <a class="col-4" href="{{ url_for('article.post', post_id=post.id) }}">
+                <div class="card m-3">
+                  <img width="300ppx" class="card-img-top img-fluid" src="static/images/web_case/dramychang_tw_small.png" alt="">
+                  <div class="card-block">
+                    <h4 class="card-title">張醫師醫美網</h4>
+                    <p class="card-text">自適化網頁設計，橫向開閤移動設計，滿足業主需求</p>
+                  </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label for="content_input" class="col-2 col-form-label"></label>
-                <div class="col-10">
-                  <button type="submit" class="btn btn-primary btn-lg">送出</button>
+              </a>
+              <a class="col-4" href="{{ url_for('article.post', post_id=post.id) }}">
+                <div class="card m-3">
+                  <img width="300ppx" class="card-img-top img-fluid" src="static/images/web_case/security.jpg" alt="">
+                  <div class="card-block">
+                    <h4 class="card-title">國立醫院機房監控系統</h4>
+                    <p class="card-text">拖拉式新增地圖監看物件，查詢任何時間感測器狀態</p>
+                  </div>
                 </div>
-            </div>
-          </form>
+              </a>
+              <a class="col-4" href="{{ url_for('article.post', post_id=post.id) }}">
+                <div class="card m-3">
+                  <img width="300ppx" class="card-img-top img-fluid" src="static/images/web_case/security.jpg" alt="">
+                  <div class="card-block">
+                    <h4 class="card-title">政府單位機房監控系統</h4>
+                    <p class="card-text">拖拉式新增地圖監看物件，查詢任何時間感測器狀態</p>
+                  </div>
+                </div>
+              </a>
+          </div>
         </div>
-        
+
         <footer class="footer m-5">
           <div class="container d-flex justify-content-center">
             <div class="text-muted m-3">
