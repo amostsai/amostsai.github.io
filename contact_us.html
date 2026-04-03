@@ -53,23 +53,23 @@
         </div>
       </div>
 
-      <form class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm" action="mailto:amos.tsai@gmail.com" method="post" enctype="text/plain">
+      <form id="contact-form" class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm" action="mailto:amos.tsai@gmail.com" method="post" enctype="text/plain" autocomplete="on">
         <div class="space-y-5">
           <div>
             <label for="name" class="block text-sm font-medium text-slate-700">公司/姓名</label>
-            <input id="name" name="name" required class="mt-2 w-full rounded-xl border-slate-300 focus:border-sky-500 focus:ring-sky-500" type="text" placeholder="請輸入您的稱呼" />
+            <input id="name" name="name" required class="mt-2 w-full rounded-lg px-4 py-3 border-slate-300 placeholder:text-slate-400 focus:border-sky-500 focus:ring-sky-500" type="text" placeholder="請輸入您的稱呼" />
           </div>
           <div>
             <label for="email" class="block text-sm font-medium text-slate-700">電子郵件</label>
-            <input id="email" name="email" required class="mt-2 w-full rounded-xl border-slate-300 focus:border-sky-500 focus:ring-sky-500" type="email" placeholder="you@company.com" />
+            <input id="email" name="email" required class="mt-2 w-full rounded-lg px-4 py-3 border-slate-300 placeholder:text-slate-400 focus:border-sky-500 focus:ring-sky-500" type="email" placeholder="you@company.com" />
           </div>
           <div>
             <label for="phone" class="block text-sm font-medium text-slate-700">聯絡電話</label>
-            <input id="phone" name="phone" class="mt-2 w-full rounded-xl border-slate-300 focus:border-sky-500 focus:ring-sky-500" type="text" placeholder="09xx-xxx-xxx" />
+            <input id="phone" name="phone" class="mt-2 w-full rounded-lg px-4 py-3 border-slate-300 placeholder:text-slate-400 focus:border-sky-500 focus:ring-sky-500" type="text" placeholder="09xx-xxx-xxx" />
           </div>
           <div>
             <label for="message" class="block text-sm font-medium text-slate-700">需求說明</label>
-            <textarea id="message" name="message" rows="6" required class="mt-2 w-full rounded-xl border-slate-300 focus:border-sky-500 focus:ring-sky-500" placeholder="可描述目標、預算範圍、期望時程"></textarea>
+            <textarea id="message" name="message" rows="6" required class="mt-2 w-full rounded-lg px-4 py-3 border-slate-300 placeholder:text-slate-400 focus:border-sky-500 focus:ring-sky-500" placeholder="可描述目標、預算範圍、期望時程"></textarea>
           </div>
           <button type="submit" class="w-full px-6 py-3 rounded-xl bg-sky-600 text-white font-medium hover:bg-sky-700">送出需求</button>
           <p class="text-xs text-slate-500">送出後會開啟您的預設信箱寄出表單內容（目前為靜態網站模式）。</p>
@@ -82,7 +82,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid md:grid-cols-2 gap-6 text-sm text-slate-600">
       <div>
         <p class="font-semibold text-slate-900">學創科技有限公司 metalearning</p>
-        <p class="mt-2">網站開發 · 手機 App · AI 應用 · 企業授課</p>
+        <p class="mt-2">專業開發 × AI 實戰教學，驅動企業升級</p>
       </div>
       <div class="md:text-right">
         <p>108 台北市萬華區雙園街2號</p>
