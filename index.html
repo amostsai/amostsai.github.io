@@ -1,141 +1,160 @@
-<!DOCTYPE html>
-<html lang="zh_TW">
-	<head>
-		<title>學創科技有限公司</title>
-        <link href="favicon.ico" rel="SHORTCUT ICON">
-        <meta charset='utf-8'>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
-        <meta name="description" content="網站開發、手機開發、企業包班、電腦家教">
-        <meta name="author" content="學創科技有限公司">
-        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-        <link rel="stylesheet" href="/static/tether-1.3.3/tether.min.css">
-        <link rel="stylesheet" href="/static/bootstrap-4.0.0-alpha.6-dist/bootstrap.min.css">
-        <link rel="stylesheet" href="static/font-awesome-4.7.0/css/font-awesome.min.css">
-        <style>
-            body { 
-                padding-top: 70px;
-                font-size: 1.2rem;
-            }
-        </style>
-	<script type="text/javascript">
-	    (function(c,l,a,r,i,t,y){
-	        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-	        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-	        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-	    })(window, document, "clarity", "script", "orckxrd5la");
-	</script>
-	</head>
-
-	<body>
-        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse bg-faded fixed-top">
-            <a class="navbar-brand" href="/">
-            <img src="static/images/logo.png" width="30" height="30" alt="">
-             學創科技有限公司
-            </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">服務項目 <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/case.html">案例分享 </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact_us.html">聯絡我們 </a>
-                    </li>
-                </ul>
-            </div>
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>學創科技有限公司 Metalearning | 數位轉型與 AI 應用</title>
+  <meta name="description" content="學創科技有限公司（metalearning）專注網站開發、手機 App、AI 應用導入與企業授課，打造兼具效率與商業價值的數位產品。" />
+  <link rel="icon" href="favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="static/site.css" />
+</head>
+<body>
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="h-16 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3 font-semibold text-slate-900">
+          <img src="static/images/logo.png" alt="學創科技" class="h-8 w-8 rounded" />
+          <span>學創科技 <span class="text-sky-600">metalearning</span></span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm text-slate-600">
+          <a class="text-sky-700 font-semibold" href="/">首頁</a>
+          <a class="hover:text-sky-700" href="/services.html">服務項目</a>
+          <a class="hover:text-sky-700" href="/news.html">最新消息</a>
+          <a class="hover:text-sky-700" href="/tech.html">技術分享</a>
+          <a class="hover:text-sky-700" href="/contact_us.html">聯絡我們</a>
         </nav>
-
-        <div class="d-flex justify-content-center p-3">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
-              </ol>
-              <div class="carousel-inner" role="listbox">
-                <div class="carousel-item">
-                  <img class="d-block img-fluid" data-src="holder.js/800x400?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [800x400]" src="static/images/web1.png" data-holder-rendered="true">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block img-fluid" data-src="holder.js/800x400?auto=yes&amp;bg=666&amp;fg=444&amp;text=Second slide" alt="Second slide [800x400]" src="static/images/web2.jpg" data-holder-rendered="true">
-                </div>
-                <div class="carousel-item active">
-                  <img class="d-block img-fluid" data-src="holder.js/800x400?auto=yes&amp;bg=555&amp;fg=333&amp;text=Third slide" alt="Third slide [800x400]" src="static/images/web3.png" data-holder-rendered="true">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
+        <button id="menu-toggle" class="md:hidden text-slate-700" aria-label="open menu">☰</button>
+      </div>
+      <nav id="mobile-menu" class="md:hidden hidden pb-4 text-sm text-slate-700">
+        <div class="grid gap-2">
+          <a class="text-sky-700 font-semibold" href="/">首頁</a>
+          <a href="/services.html">服務項目</a>
+          <a href="/news.html">最新消息</a>
+          <a href="/tech.html">技術分享</a>
+          <a href="/contact_us.html">聯絡我們</a>
         </div>
+      </nav>
+    </div>
+  </header>
 
-		<div class="container d-flex justify-content-around">
-            <div class="card-deck">
-              <div class="card">
-                <img class="card-img-top" src="static/images/earth.jpg" alt="Card image cap">
-                <div class="card-block">
-                  <h4 class="card-title">網站開發 Web</h4>
-                  <p class="card-text">配合專業美術設計，為您設計您喜愛的企業網站，使用最新技術開發更加擴充性、更加安全的網站</p>
-                </div>
-              </div>
-              <div class="card">
-                <img class="card-img-top" src="static/images/earth.jpg" alt="Card image cap">
-                <div class="card-block">
-                  <h4 class="card-title">手機開發 App</h4>
-                  <p class="card-text">不管是蘋果(apple)手機或是安卓(android)手機都可以根據您的需求進行設計</p>
-                </div>
-              </div>
-              <div class="card">
-                <img class="card-img-top" src="static/images/earth.jpg" alt="Card image cap">
-                <div class="card-block">
-                  <h4 class="card-title">企業包班 Training</h4>
-                  <p class="card-text">超高CP值，根據公司需要安排專業師資、課程，符合客戶需求、提昇員工技能</p>
-                </div>
-              </div>
-              <div class="card">
-                <img class="card-img-top" src="static/images/earth.jpg" alt="Card image cap">
-                <div class="card-block">
-                  <h4 class="card-title">電腦家教 Tutor</h4>
-                  <p class="card-text">找不到適合的課程，或是湊不齊開班人數嗎，根據您的需要量身訂做課程</p>
-                </div>
-              </div>
-            </div>
-		</div>
-
-        <footer class="footer m-5">
-          <div class="container d-flex justify-content-center">
-            <div class="text-muted m-3">
-                <i class="fa fa-copyright" aria-hidden="true"></i>
-                Copyright 學創科技有限公司
-            </div>
-            <div class="text-muted m-3">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                108 台北市萬華區雙園街2號
-            </div>
-            <div class="text-muted m-3">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                0982-460-210
+  <main>
+    <section class="hero-bg">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div class="grid lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <span class="tag">極簡科技感 × 企業可信度</span>
+            <h1 class="mt-5 text-4xl lg:text-5xl font-bold leading-tight text-slate-900">
+              讓技術成為企業成長的
+              <span class="text-sky-600">加速器</span>
+            </h1>
+            <p class="mt-6 prose-muted text-lg">
+              學創科技有限公司（metalearning）提供網站開發、手機 App、AI 應用導入與企業授課，
+              從策略到落地，協助企業打造可持續優化的數位系統。
+            </p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="/services.html" class="px-6 py-3 rounded-xl bg-sky-600 text-white font-medium hover:bg-sky-700">查看服務</a>
+              <a href="/contact_us.html" class="px-6 py-3 rounded-xl border border-slate-300 font-medium hover:border-sky-400 hover:text-sky-700">預約諮詢</a>
             </div>
           </div>
-        </footer>
+          <div class="glass-card rounded-2xl border border-white/70 shadow-xl p-4">
+            <img src="static/images/web1.png" alt="網站與產品開發" class="w-full rounded-xl object-cover" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <script src="/static/jQuery/jquery-3.1.1.min.js"></script>
-        <script src="/static/tether-1.3.3/tether.min.js"></script>
-        <script src="/static/bootstrap-4.0.0-alpha.6-dist/bootstrap.min.js"></script>
-	</body>
+    <section class="py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-end justify-between gap-4">
+          <div>
+            <p class="text-sky-600 font-semibold">Core Services</p>
+            <h2 class="section-title text-3xl font-bold mt-2">一站式數位服務</h2>
+          </div>
+          <a href="/services.html" class="hidden sm:inline text-sm text-sky-700 hover:underline">看完整服務 →</a>
+        </div>
+        <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <article class="card-hover p-6 rounded-2xl border border-slate-200 bg-white">
+            <h3 class="font-semibold text-lg">網站開發</h3>
+            <p class="mt-3 prose-muted">企業形象站、品牌官網、後台系統，兼顧速度、安全與擴充性。</p>
+          </article>
+          <article class="card-hover p-6 rounded-2xl border border-slate-200 bg-white">
+            <h3 class="font-semibold text-lg">手機 App</h3>
+            <p class="mt-3 prose-muted">iOS / Android 產品開發與整合，打造流暢且一致的跨平台體驗。</p>
+          </article>
+          <article class="card-hover p-6 rounded-2xl border border-slate-200 bg-white">
+            <h3 class="font-semibold text-lg">AI 應用</h3>
+            <p class="mt-3 prose-muted">流程自動化、客服與知識管理，讓 AI 變成可衡量的生產力工具。</p>
+          </article>
+          <article class="card-hover p-6 rounded-2xl border border-slate-200 bg-white">
+            <h3 class="font-semibold text-lg">企業授課</h3>
+            <p class="mt-3 prose-muted">依企業情境客製課綱，提升團隊技能與落地執行能力。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-slate-50 border-y border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div>
+          <p class="text-sky-600 font-semibold">Selected Works</p>
+          <h2 class="section-title text-3xl font-bold mt-2">案例精選</h2>
+        </div>
+        <div class="mt-8 grid md:grid-cols-3 gap-6">
+          <a class="rounded-2xl overflow-hidden border border-slate-200 bg-white card-hover" href="/services.html#cases">
+            <img src="static/images/web_case/cheminfo_org_tw_small.png" alt="石化產業平台" class="w-full h-48 object-cover" />
+            <div class="p-5">
+              <h3 class="font-semibold">石化產業社會責任整合平台</h3>
+              <p class="mt-2 text-sm prose-muted">完整前後台建置，支援內容維運與帳號管理。</p>
+            </div>
+          </a>
+          <a class="rounded-2xl overflow-hidden border border-slate-200 bg-white card-hover" href="/services.html#cases">
+            <img src="static/images/web_case/foreverpmc_com_small.png" alt="診所網站" class="w-full h-48 object-cover" />
+            <div class="p-5">
+              <h3 class="font-semibold">長建身心診所官網</h3>
+              <p class="mt-2 text-sm prose-muted">自適化網站設計，強化品牌形象與裝置相容性。</p>
+            </div>
+          </a>
+          <a class="rounded-2xl overflow-hidden border border-slate-200 bg-white card-hover" href="/services.html#cases">
+            <img src="static/images/web_case/dramychang_tw_small.png" alt="醫美網站" class="w-full h-48 object-cover" />
+            <div class="p-5">
+              <h3 class="font-semibold">張醫師醫美網</h3>
+              <p class="mt-2 text-sm prose-muted">視覺與互動優化，兼顧內容呈現與品牌信任感。</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="rounded-3xl bg-slate-900 text-white p-8 lg:p-12 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+          <div>
+            <p class="text-sky-300 font-semibold">Let’s Build Together</p>
+            <h2 class="mt-2 text-3xl font-bold">想讓官網與產品一起升級？</h2>
+            <p class="mt-3 text-slate-300">我們可以從需求訪談、技術評估到上線維運，陪你走完整段數位轉型旅程。</p>
+          </div>
+          <a href="/contact_us.html" class="inline-flex justify-center px-6 py-3 rounded-xl bg-sky-500 hover:bg-sky-400 text-white font-medium">現在就聊聊</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid md:grid-cols-2 gap-6 text-sm text-slate-600">
+      <div>
+        <p class="font-semibold text-slate-900">學創科技有限公司 metalearning</p>
+        <p class="mt-2">網站開發 · 手機 App · AI 應用 · 企業授課</p>
+      </div>
+      <div class="md:text-right">
+        <p>108 台北市萬華區雙園街2號</p>
+        <p class="mt-1">電話：0982-460-210</p>
+        <p class="mt-1">LINE ID：amos.tsai</p>
+        <p class="mt-2 text-slate-400">© <span id="year"></span> metalearning. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="static/site.js"></script>
+</body>
 </html>

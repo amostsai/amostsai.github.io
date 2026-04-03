@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>服務項目 | 學創科技有限公司 metalearning</title>
+  <meta name="description" content="metalearning 服務項目：網站開發、手機 App、AI 應用、企業授課，並提供跨產業專案實績。" />
+  <link rel="icon" href="favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="static/site.css" />
+</head>
+<body class="bg-slate-50">
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="h-16 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3 font-semibold text-slate-900">
+          <img src="static/images/logo.png" alt="學創科技" class="h-8 w-8 rounded" />
+          <span>學創科技 <span class="text-sky-600">metalearning</span></span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm text-slate-600">
+          <a class="hover:text-sky-700" href="/">首頁</a>
+          <a class="text-sky-700 font-semibold" href="/services.html">服務項目</a>
+          <a class="hover:text-sky-700" href="/news.html">最新消息</a>
+          <a class="hover:text-sky-700" href="/tech.html">技術分享</a>
+          <a class="hover:text-sky-700" href="/contact_us.html">聯絡我們</a>
+        </nav>
+        <button id="menu-toggle" class="md:hidden text-slate-700" aria-label="open menu">☰</button>
+      </div>
+      <nav id="mobile-menu" class="md:hidden hidden pb-4 text-sm text-slate-700">
+        <div class="grid gap-2">
+          <a href="/">首頁</a>
+          <a class="text-sky-700 font-semibold" href="/services.html">服務項目</a>
+          <a href="/news.html">最新消息</a>
+          <a href="/tech.html">技術分享</a>
+          <a href="/contact_us.html">聯絡我們</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="py-14">
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <span class="tag">Professional Services</span>
+      <h1 class="mt-4 text-4xl font-bold">服務項目</h1>
+      <p class="mt-4 prose-muted max-w-3xl">我們將技術能力與商業需求整合，協助你在品牌、營運與客戶體驗三個層面同時升級。</p>
+
+      <div class="mt-10 grid md:grid-cols-2 gap-6">
+        <article class="bg-white p-7 rounded-2xl border border-slate-200 card-hover">
+          <h2 class="text-2xl font-semibold">網站開發</h2>
+          <p class="mt-3 prose-muted">官網、內容管理系統、會員平台與後台整合，建立穩定可擴充的 Web 架構。</p>
+          <ul class="mt-4 text-sm text-slate-600 list-disc pl-5 space-y-1">
+            <li>品牌官網與企業形象頁</li>
+            <li>CMS / 後台權限管理</li>
+            <li>SEO 與速度優化</li>
+          </ul>
+        </article>
+        <article class="bg-white p-7 rounded-2xl border border-slate-200 card-hover">
+          <h2 class="text-2xl font-semibold">手機 App 開發</h2>
+          <p class="mt-3 prose-muted">依產品需求設計 iOS / Android 體驗，並串接既有資料流程。</p>
+          <ul class="mt-4 text-sm text-slate-600 list-disc pl-5 space-y-1">
+            <li>需求釐清與流程設計</li>
+            <li>跨平台產品開發</li>
+            <li>上架與維運建議</li>
+          </ul>
+        </article>
+        <article class="bg-white p-7 rounded-2xl border border-slate-200 card-hover">
+          <h2 class="text-2xl font-semibold">AI 應用導入</h2>
+          <p class="mt-3 prose-muted">從聊天機器人、知識庫到流程自動化，建立可衡量 ROI 的 AI 解決方案。</p>
+          <ul class="mt-4 text-sm text-slate-600 list-disc pl-5 space-y-1">
+            <li>客服與內部問答助理</li>
+            <li>自動化報表與內容流程</li>
+            <li>AI 專案落地與教育訓練</li>
+          </ul>
+        </article>
+        <article class="bg-white p-7 rounded-2xl border border-slate-200 card-hover">
+          <h2 class="text-2xl font-semibold">企業授課</h2>
+          <p class="mt-3 prose-muted">針對企業狀態設計課程，讓團隊「學得會、做得到、交得出成果」。</p>
+          <ul class="mt-4 text-sm text-slate-600 list-disc pl-5 space-y-1">
+            <li>網站與程式開發內訓</li>
+            <li>AI 工具實務工作坊</li>
+            <li>專案導向教學與顧問陪跑</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="cases" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+      <h2 class="text-3xl font-bold">案例分享</h2>
+      <p class="mt-3 prose-muted">以下為近期代表性案例，將持續擴充為更完整的專案展示牆。</p>
+      <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="rounded-2xl overflow-hidden bg-white border border-slate-200 card-hover">
+          <img src="static/images/web_case/cheminfo_org_tw_small.png" alt="石化產業社會責任及資源整合平台" class="w-full h-48 object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold">石化產業社會責任及資源整合平台</h3>
+            <p class="text-sm prose-muted mt-2">完整前後台建置，支援內容發布與權限管理。</p>
+          </div>
+        </article>
+        <article class="rounded-2xl overflow-hidden bg-white border border-slate-200 card-hover">
+          <img src="static/images/web_case/foreverpmc_com_small.png" alt="長建身心診所" class="w-full h-48 object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold">長建身心診所官網</h3>
+            <p class="text-sm prose-muted mt-2">自適化設計，提升品牌可信度與行動端體驗。</p>
+          </div>
+        </article>
+        <article class="rounded-2xl overflow-hidden bg-white border border-slate-200 card-hover">
+          <img src="static/images/web_case/dramychang_tw_small.png" alt="張醫師醫美網" class="w-full h-48 object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold">張醫師醫美網</h3>
+            <p class="text-sm prose-muted mt-2">資訊導向與視覺表現兼顧，強化瀏覽導流效率。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white mt-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid md:grid-cols-2 gap-6 text-sm text-slate-600">
+      <div>
+        <p class="font-semibold text-slate-900">學創科技有限公司 metalearning</p>
+        <p class="mt-2">網站開發 · 手機 App · AI 應用 · 企業授課</p>
+      </div>
+      <div class="md:text-right">
+        <p>108 台北市萬華區雙園街2號</p>
+        <p class="mt-1">電話：0982-460-210</p>
+        <p class="mt-1">LINE ID：amos.tsai</p>
+        <p class="mt-2 text-slate-400">© <span id="year"></span> metalearning. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="static/site.js"></script>
+</body>
+</html>

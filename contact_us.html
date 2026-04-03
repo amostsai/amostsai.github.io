@@ -1,107 +1,97 @@
-<!DOCTYPE html>
-<html lang="zh_TW">
-    <head>
-        <title>學創科技有限公司</title>
-        <link href="favicon.ico" rel="SHORTCUT ICON">
-        <meta charset='utf-8'>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
-        <meta name="description" content="網站開發、手機開發、企業包班、電腦家教">
-        <meta name="author" content="學創科技有限公司">
-        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-        <link rel="stylesheet" href="/static/tether-1.3.3/tether.min.css">
-        <link rel="stylesheet" href="/static/bootstrap-4.0.0-alpha.6-dist/bootstrap.min.css">
-        <link rel="stylesheet" href="static/font-awesome-4.7.0/css/font-awesome.min.css">
-        <style>
-            body { 
-                padding-top: 70px;
-                font-size: 1.2rem;
-            }
-        </style>
-    </head>
-
-    <body>
-        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse bg-faded fixed-top">
-            <a class="navbar-brand" href="/">
-            <img src="static/images/logo.png" width="30" height="30" alt="">
-            學創科技有限公司
-            </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">服務項目 <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/case.html">案例分享 </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/contact_us.html">聯絡我們 </a>
-                    </li>
-                </ul>
-            </div>
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>聯絡我們 | 學創科技有限公司 metalearning</title>
+  <meta name="description" content="聯絡學創科技（metalearning）：網站開發、手機 App、AI 應用與企業授課合作諮詢。" />
+  <link rel="icon" href="favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="static/site.css" />
+</head>
+<body class="bg-slate-50">
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="h-16 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3 font-semibold text-slate-900">
+          <img src="static/images/logo.png" alt="學創科技" class="h-8 w-8 rounded" />
+          <span>學創科技 <span class="text-sky-600">metalearning</span></span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm text-slate-600">
+          <a class="hover:text-sky-700" href="/">首頁</a>
+          <a class="hover:text-sky-700" href="/services.html">服務項目</a>
+          <a class="hover:text-sky-700" href="/news.html">最新消息</a>
+          <a class="hover:text-sky-700" href="/tech.html">技術分享</a>
+          <a class="text-sky-700 font-semibold" href="/contact_us.html">聯絡我們</a>
         </nav>
-
-        <div class="container p-3">
-          <form>
-            <div class="form-group row">
-              <label for="name_input" class="col-2 col-form-label">公司寶號/姓名</label>
-              <div class="col-10">
-                <input class="form-control" type="text" id="name_input">
-              </div>
-            </div>
-            <div class="form-group row">
-                <label for="phone_input" class="col-2 col-form-label">電子郵件</label>
-                <div class="col-10">
-                  <input class="form-control" type="text" id="phone_input">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="phone_input" class="col-2 col-form-label">聯絡電話</label>
-                <div class="col-10">
-                  <input class="form-control" type="text" id="phone_input">
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="content_input" class="col-2 col-form-label">留言內容</label>
-                <div class="col-10">
-                  <textarea class="form-control" type="text" id="content_input" rows="10" cols="50"></textarea>
-                </div>
-            </div>
-            <div class="form-group row">
-                <label for="content_input" class="col-2 col-form-label"></label>
-                <div class="col-10">
-                  <button type="submit" class="btn btn-primary btn-lg">送出</button>
-                </div>
-            </div>
-          </form>
+        <button id="menu-toggle" class="md:hidden text-slate-700" aria-label="open menu">☰</button>
+      </div>
+      <nav id="mobile-menu" class="md:hidden hidden pb-4 text-sm text-slate-700">
+        <div class="grid gap-2">
+          <a href="/">首頁</a>
+          <a href="/services.html">服務項目</a>
+          <a href="/news.html">最新消息</a>
+          <a href="/tech.html">技術分享</a>
+          <a class="text-sky-700 font-semibold" href="/contact_us.html">聯絡我們</a>
         </div>
-        
-        <footer class="footer m-5">
-          <div class="container d-flex justify-content-center">
-            <div class="text-muted m-3">
-                <i class="fa fa-copyright" aria-hidden="true"></i>
-                Copyright 學創科技有限公司
-            </div>
-            <div class="text-muted m-3">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                108 台北市萬華區雙園街2號
-            </div>
-            <div class="text-muted m-3">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                0982-460-210
-            </div>
-          </div>
-        </footer>
+      </nav>
+    </div>
+  </header>
 
-        <script src="/static/jQuery/jquery-3.1.1.min.js"></script>
-        <script src="/static/tether-1.3.3/tether.min.js"></script>
-        <script src="/static/bootstrap-4.0.0-alpha.6-dist/bootstrap.min.js"></script>
-    </body>
+  <main class="py-14">
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-8">
+      <div>
+        <span class="tag">Contact Us</span>
+        <h1 class="mt-4 text-4xl font-bold">聊聊你的下一個專案</h1>
+        <p class="mt-4 prose-muted">無論是官網改版、App 開發、AI 導入或企業訓練，都歡迎先描述你的需求，我們會盡快與你聯繫。</p>
+
+        <div class="mt-8 space-y-3 text-slate-700">
+          <p><span class="font-semibold">公司：</span>學創科技有限公司（metalearning）</p>
+          <p><span class="font-semibold">地址：</span>108 台北市萬華區雙園街2號</p>
+          <p><span class="font-semibold">電話：</span>0982-460-210</p>
+          <p><span class="font-semibold">LINE ID：</span>amos.tsai</p>
+        </div>
+      </div>
+
+      <form class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm" action="mailto:amos.tsai@gmail.com" method="post" enctype="text/plain">
+        <div class="space-y-5">
+          <div>
+            <label for="name" class="block text-sm font-medium text-slate-700">公司/姓名</label>
+            <input id="name" name="name" required class="mt-2 w-full rounded-xl border-slate-300 focus:border-sky-500 focus:ring-sky-500" type="text" placeholder="請輸入您的稱呼" />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-slate-700">電子郵件</label>
+            <input id="email" name="email" required class="mt-2 w-full rounded-xl border-slate-300 focus:border-sky-500 focus:ring-sky-500" type="email" placeholder="you@company.com" />
+          </div>
+          <div>
+            <label for="phone" class="block text-sm font-medium text-slate-700">聯絡電話</label>
+            <input id="phone" name="phone" class="mt-2 w-full rounded-xl border-slate-300 focus:border-sky-500 focus:ring-sky-500" type="text" placeholder="09xx-xxx-xxx" />
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-slate-700">需求說明</label>
+            <textarea id="message" name="message" rows="6" required class="mt-2 w-full rounded-xl border-slate-300 focus:border-sky-500 focus:ring-sky-500" placeholder="可描述目標、預算範圍、期望時程"></textarea>
+          </div>
+          <button type="submit" class="w-full px-6 py-3 rounded-xl bg-sky-600 text-white font-medium hover:bg-sky-700">送出需求</button>
+          <p class="text-xs text-slate-500">送出後會開啟您的預設信箱寄出表單內容（目前為靜態網站模式）。</p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white mt-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid md:grid-cols-2 gap-6 text-sm text-slate-600">
+      <div>
+        <p class="font-semibold text-slate-900">學創科技有限公司 metalearning</p>
+        <p class="mt-2">網站開發 · 手機 App · AI 應用 · 企業授課</p>
+      </div>
+      <div class="md:text-right">
+        <p>108 台北市萬華區雙園街2號</p>
+        <p class="mt-1">電話：0982-460-210</p>
+        <p class="mt-1">LINE ID：amos.tsai</p>
+        <p class="mt-2 text-slate-400">© <span id="year"></span> metalearning. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="static/site.js"></script>
+</body>
 </html>
