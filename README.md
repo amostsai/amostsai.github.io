@@ -2,23 +2,31 @@
 
 學創科技有限公司（metalearning）官網。
 
-## 聯絡表單為什麼會顯示紅字？
-在瀏覽器中使用 `mailto:` 表單（且網頁不是 HTTPS 或無法判定安全性）時，Chrome 可能顯示：
-`This form is not secure. Autofill has been turned off.`
+## 表單紅字原因（Chrome）
+如果用 `mailto:` 直接送表單，瀏覽器可能顯示安全提示（紅字）。
+這不是程式壞掉，而是瀏覽器提醒該提交方式不安全/不穩定。
 
-這是瀏覽器的安全提示，不是程式錯誤。
+## 改成送到 Discord（推薦做法）
+GitHub Pages 是靜態站，不能安全地把 Discord Webhook 直接放前端。
 
-## 想把聯絡表單送到 Discord 頻道（建議做法）
-GitHub Pages 是靜態網站，**不應直接把 Discord Webhook URL 寫在前端**（會外洩被濫用）。
+### 架構
+官網表單 → Cloudflare Worker（中繼）→ Discord Webhook
 
-建議流程：
-1. 建立一個中繼 API（Cloudflare Worker / Vercel Function / Netlify Function）
-2. Webhook URL 放在中繼 API 的環境變數
-3. 網站表單送到中繼 API，再由 API 發到 Discord 頻道
+### 這個 repo 已包含
+- 前端表單提交（`contact_us.html` + `static/site.js`）
+- Worker 範本：`worker-discord-contact.js`
 
-可選加強：
-- hCaptcha / Cloudflare Turnstile 防垃圾訊息
-- Rate limit（同 IP 限速）
-- 欄位長度限制與關鍵字過濾
+### 部署步驟（Cloudflare Worker）
+1. 在 Discord 目標頻道建立 Webhook（可在**另一個伺服器**，只要 webhook 建在該頻道即可）
+2. 建立 Worker，貼上 `worker-discord-contact.js`
+3. 設定環境變數 `DISCORD_WEBHOOK_URL`（不要寫死在程式）
+4. 部署後取得 URL，例如：
+   - `https://metalearning-contact.example.workers.dev/contact`
+5. 修改 `contact_us.html` 的 form 屬性：
+   - `data-endpoint="你的 worker URL"`
+6. commit + push
 
-如果需要，我可以下一版直接幫你把前端改成 `fetch('/api/contact')` 的格式，並附上 Cloudflare Worker 可直接部署的範本。
+### 安全建議
+- 加入 Turnstile/hCaptcha
+- 針對 IP 做 rate limit
+- 若可行，將 `Access-Control-Allow-Origin` 從 `*` 限制為你的網域
