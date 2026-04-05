@@ -76,3 +76,14 @@ body {
 }
 
 .dark-metric p { color: #dbeafe; }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity .55s ease, transform .55s ease;
+}
+
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}

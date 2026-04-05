@@ -16,6 +16,39 @@
   const form = document.getElementById('contact-form');
   const status = document.getElementById('form-status');
 
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && revealEls.length) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach((el) => io.observe(el));
+  } else {
+    revealEls.forEach((el) => el.classList.add('in'));
+  }
+
+  const countNodes = document.querySelectorAll('.countup');
+  countNodes.forEach((node) => {
+    const target = Number(node.dataset.target || 0);
+    const suffix = node.dataset.suffix || '';
+    let n = 0;
+    const step = Math.max(1, Math.ceil(target / 28));
+    const tick = () => {
+      n += step;
+      if (n >= target) {
+        node.textContent = `${target}${suffix}`;
+      } else {
+        node.textContent = `${n}${suffix}`;
+        requestAnimationFrame(tick);
+      }
+    };
+    requestAnimationFrame(tick);
+  });
+
   if (form) {
     form.addEventListener('submit', async function (e) {
       e.preventDefault();
