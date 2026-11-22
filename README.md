@@ -30,3 +30,11 @@ GitHub Pages 是靜態站，不能安全地把 Discord Webhook 直接放前端�
 - 加入 Turnstile/hCaptcha
 - 針對 IP 做 rate limit
 - 若可行，將 `Access-Control-Allow-Origin` 從 `*` 限制為你的網域
+
+## 軟體隱私權政策
+
+每個軟體使用獨立目錄：`apps/<軟體名稱>/privacy-policy.html`，目錄名稱使用小寫英文字母與連字號。
+
+- GNimport：[隱私權政策](https://www.metalearning.tw/apps/gnimport/privacy-policy.html)
+
+新增軟體時，建立對應目錄、放入該軟體的 `privacy-policy.html`，並更新此清單與 `sitemap.xml`。
